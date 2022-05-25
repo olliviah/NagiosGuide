@@ -1,2 +1,2 @@
 # NagiosGuide
-Pasos para instalar Nagios y Monotorizacion.
+## Pasos para instalar Nagios y Monotorizacion.
