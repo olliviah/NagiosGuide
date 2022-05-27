@@ -88,4 +88,6 @@ Iniciamos los servicios   Apache y Nagios:
 sudo systemctl restart apache2.service
 sudo systemctl start nagios.service
 ````
-Ya podriamos acceder a nuestro nagios :smiley:
+Ya podriamos acceder a nuestro nagios a traves de cualquier navegador web poniendo la IP de nuestro ordenador :smiley:
+
+![ima
