@@ -42,4 +42,50 @@ luego este comando:
 sudo make all
 ````
 
+Para crear Usuarios y grupos lanzamos los siguiente comandos:
 
+````
+sudo make install-groups-users
+sudo usermod -a -G nagios www-data
+````
+Instalamos los Binarios:
+````
+make install
+````
+### luego instalamos el servicio Daemon:
+````
+sudo make install-daemoninit
+````
+Luego de hacer todo esto pasamos a instalar ficheros de configuraciones.
+
+En este paso vamos a instalar los ficheros con configuraciones a modo ejemplo.
+***Estos son necesarios para que podemos iniciar Nagios.***
+````
+sudo make install-config
+````
+## Instalamos los ficheros de configuracion de Apache:
+En este paso se instalan los ficheros de configuracion del servidor web Apache y lo configura.
+````
+sudo make install-webconf
+sudo a2enmod rewrite
+sudo a2enmod cgi
+````
+Configuramos el firewall: 
+````
+sudo ufw allow Apache
+sudo ufw reload
+````
+Crear el usuario "nagiosadmin" en mi caso yo en la contraseña puse lo mismo que en el usuario...
+
+Tiramos el siguiente comando y luego ponemos nuestro usuario y contraseña:
+
+````
+sudo htpasswd -c /usr/local/nagios/etc/htpasswd.users nagiosadmin
+````
+Iniciamos los servicios   Apache y Nagios:
+
+````
+sudo systemctl restart apache2.service
+sudo systemctl start nagios.service
+````
+Ya podriamos acceder a nuestro nagios :smiley:
