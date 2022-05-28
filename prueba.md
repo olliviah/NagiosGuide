@@ -90,4 +90,46 @@ sudo systemctl start nagios.service
 ````
 Ya podriamos acceder a nuestro nagios a traves de cualquier navegador web poniendo la IP de nuestro ordenador :smiley:
 
-![ima
+![imagen pero no se como
+
+
+
+## Nagios plugins
+### **Este paso es para arreglar los problemas que teneos con los hosts.**
+Necesitamos algunos Prerequisitos:
+- autoconf
+- gcc
+- libmcrypt-dev
+- wget
+- bc
+- dc 
+- gawk
+- build essential
+- gettext
+- libnet-snmp-perl
+
+Con el siguiente comando instalamos las dependencias:
+````
+sudo apt install libssl-dev gcc libc6 libmcrypt-dev wget bc gawk dc build-essential snmp gettext libnet-snmp-perl -y
+````
+
+nos metemos en la carpeta de ***"tmp"***
+
+y clonamos el nagios plugins para descargarlo con el siguiente comando dentro de la la carpeta ***tmp***.
+
+````
+git clone https://github.com/nagios-plugins/nagios-plugins/
+cd nagios-plugins
+````
+Dejemos que se descargue y luego utilizamos esta serie de comandos para que se instale:
+````
+./tools/setup
+./configure --prefix=/usr/local/nagios --with-cgiurl=/nagios/cgi-bin
+sudo make
+sudo make install
+sudo make install-root
+````
+**Ya deberiamos de tener todo listo para empezar la parte de monitorizacion**.
+
+
+
