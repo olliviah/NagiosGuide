@@ -90,7 +90,11 @@ sudo systemctl start nagios.service
 ````
 Ya podriamos acceder a nuestro nagios a traves de cualquier navegador web poniendo la IP de nuestro ordenador :smiley:
 
-![imagen pero no se como
+
+![2](https://user-images.githubusercontent.com/104896936/170863508-c7d7f5d7-d90e-4a11-8c78-6745efa09321.jpg)
+
+
+![1](https://user-images.githubusercontent.com/104896936/170863485-10c95d59-bc02-4a78-a4e4-15a1eb2242f3.jpg)
 
 
 
@@ -154,7 +158,10 @@ Una vez tenemos instalado NRPE, nos crea un directorio en la ruta que esta abajo
 ````
 sudo ls /etc/nagios-plugins/config/
 ````
-PRUEBAAA
+![5](https://user-images.githubusercontent.com/104896936/170863213-b596345e-78ad-4c68-bac1-4a29088caefc.jpg)
+
+
+
 
 
 
