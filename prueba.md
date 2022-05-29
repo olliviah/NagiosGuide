@@ -160,6 +160,44 @@ sudo ls /etc/nagios-plugins/config/
 ````
 ![5](https://user-images.githubusercontent.com/104896936/170863213-b596345e-78ad-4c68-bac1-4a29088caefc.jpg)
 
+## Agregar Cliente
+### En este caso agregaremos una maquina windows para poder configurarla.
+
+para ello entramos en la siguiente ruta y fichero
+
+````
+/usr/local/nagios/etc/objects 
+````
+y Hacemos un sudo nano:
+````
+sudo nano windows.cfg
+````
+
+**Cuando entremos tendremos que asignarle la ip de nuestro ordenador cliente**.
+
+como en la siguiente imagen:
+![6](https://user-images.githubusercontent.com/104896936/170864446-4e1995ad-db00-455c-ae4d-5a4c330be546.jpg)
+
+Luego entramos en el fichero de "*nagios.cfg"*
+
+Para descomentarlo como en la siguiente imagen:
+![7](https://user-images.githubusercontent.com/104896936/170864680-686cb775-1e6b-4253-bd9b-82fe388c5daf.jpg)
+
+Ahora hay que asignarle el fichero de configuracion para que se aplique a nagios con el siguiente comando:
+````
+sudo /usr/local/nagios/bin/nagios -v /usr/local/nagios/etc/nagios.cfg
+````
+
+y deberian aparacer dos host como en la siguiente imagen:
 
 
+![8](https://user-images.githubusercontent.com/104896936/170865065-0bd2ca34-ec69-4d35-a22a-919cff337322.jpg)
 
+Luego comprobamos en nuestra web:
+
+![9](https://user-images.githubusercontent.com/104896936/170865182-c7126550-0ae7-463d-807b-370bc0cc1a8e.jpg)
+ 
+ **Podemos ver que ya hay dos Hosts** :smiley:
+ 
+ ## Instalacion de ***NSCLient++***
+Esto lo instalaremos en nuestra maquina cliente. Solo buscamos ***NSCLient++*** en un buscador y lo descargamos de la pagina web.
