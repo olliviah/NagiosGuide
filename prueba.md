@@ -200,4 +200,14 @@ Luego comprobamos en nuestra web:
  **Podemos ver que ya hay dos Hosts** :smiley:
  
  ## Instalacion de ***NSCLient++***
-Esto lo instalaremos en nuestra maquina cliente. Solo buscamos ***NSCLient++*** en un buscador y lo descargamos de la pagina web.
+Esto lo instalaremos en nuestra maquina cliente. Solo buscamos ***NSCLient++*** en un buscador y lo descargamos de la pagina web
+
+
+
+![10](https://user-images.githubusercontent.com/104896936/170866257-d9fbc49c-2098-4073-8cbd-6112cdee202d.jpg)
+
+Luego de la Instalacion tenemos podemos ya monitorizar nuestra maquina cliente Windows. :bowtie:
+
+
+![11](https://user-images.githubusercontent.com/104896936/170866755-9da8a4fe-e36d-40da-b1fa-6d70b632e2be.jpg)
+
