@@ -132,4 +132,28 @@ sudo make install-root
 **Ya deberiamos de tener todo listo para empezar la parte de monitorizacion**.
 
 
+Tenemos ahora que instalar Nagios NRPE que va a jugar un papel importante en nuestro entorno de monitorizacion.
+
+Nagios NRPE nos permite ejectutar plugings/scripts en maquinas remotas.
+
+## Instalacion de Nagios NRPE
+
+````
+sudo apt install -y monitoring-plugins nagios-nrpe-plugin
+````
+Lo que consulta Nagios NRPE:
+- CPU
+- Memoria
+- Disco
+- Servicios
+- Usuarios
+- Procesos
+
+Una vez tenemos instalado NRPE, nos crea un directorio en la ruta que esta abajo. con una serie de plugins/chequeos para poder configurarlos.
+
+````
+sudo ls /etc/nagios-plugins/config/
+````
+
+
 
