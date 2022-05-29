@@ -154,6 +154,7 @@ Una vez tenemos instalado NRPE, nos crea un directorio en la ruta que esta abajo
 ````
 sudo ls /etc/nagios-plugins/config/
 ````
+PRUEBAAA
 
 
 
